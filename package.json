@@ -4,7 +4,7 @@
   "version": "0.0.0-development",
   "description": "Example application with grep tags inside the test names",
   "scripts": {
-    "cypress:open": "cypress open",
+    "cypress:open": "DEBUG=cypress-grep cypress open",
     "cypress:run": "cypress run",
     "dev": "start-test 8888 cypress:open",
     "start": "http-server -p 8888 -c-1",
@@ -20,9 +20,9 @@
     "todomvc-common": "cypress-io/todomvc-common#88b7c6359ad4a5097312d8b2a21dd539ce9f4446"
   },
   "devDependencies": {
-    "cypress": "10.11.0",
+    "cypress": "11.2.0",
     "cypress-expect": "2.5.3",
-    "cypress-grep": "3.0.4",
+    "@cypress/grep": "^3.1.0",
     "find-cypress-specs": "1.19.4",
     "prettier": "2.2.1",
     "start-server-and-test": "1.12.1"

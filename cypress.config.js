@@ -5,6 +5,7 @@ module.exports = defineConfig({
   projectId: '4agux9',
   video: false,
   env: {
+    grepTags: '@smoke',
     grepFilterSpecs: true,
     grepOmitFiltered: true,
   },
@@ -14,7 +15,7 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // optional: register cypress-grep plugin code
       // https://github.com/bahmutov/cypress-grep
-      require('cypress-grep/src/plugin')(config)
+      require('@cypress/grep/src/plugin')(config);
 
       // make sure to return the config object
       // as it might have been modified by the plugin
