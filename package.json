@@ -20,9 +20,9 @@
     "todomvc-common": "cypress-io/todomvc-common#88b7c6359ad4a5097312d8b2a21dd539ce9f4446"
   },
   "devDependencies": {
-    "cypress": "11.2.0",
+    "@cypress/grep": "3.1.0",
+    "cypress": "12.0.1",
     "cypress-expect": "2.5.3",
-    "@cypress/grep": "^3.1.0",
     "find-cypress-specs": "1.19.4",
     "prettier": "2.2.1",
     "start-server-and-test": "1.12.1"
