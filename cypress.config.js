@@ -22,6 +22,5 @@ module.exports = defineConfig({
       return config
     },
     baseUrl: 'http://localhost:8888',
-    specPattern: 'cypress/e2e/**/*spec.js',
   },
 })
